@@ -1,0 +1,164 @@
+*{
+  box-sizing: border-box; /*le quito todo borde que haya */
+  margin: 0;
+  padding: 0;
+}
+
+header, .formulario, footer{
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+}
+
+
+p,h1,h3,a{
+	color:#E3E7F1;
+}
+.inicio{
+margin-top: 25%;
+}
+.cambio,.cambio_contrasenia{
+  display: block;
+  margin-top: 0px;
+  text-align: center;
+}
+
+header, footer{
+  padding: 10px;
+  margin: 0 auto;
+  /*height: 10vh;*/
+    box-sizing: border-box;
+  background-color: #06319A;
+}
+
+.formulario{
+  background-image: url(/imagenes/imagen.jpg);
+  background-size: contain;
+       background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.recordar{
+  margin-top: 0px;
+  display: none;
+
+}
+.container{
+  width: 90%;
+  /*height: 79vh;*/
+  margin: auto;
+  box-sizing: border-box;
+  display: block;
+  overflow: scroll;
+}
+
+.texto, .boton_registro, .boton_borrar, .boton_inicio, .texto_sesion{
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+
+}
+
+h1,h3{
+text-align: center;
+padding: 10px;
+}
+
+
+footer ul li a{
+    color: white;/*le digo al footer que sea un bloque*/
+
+}
+
+footer ul, ul{
+    text-align: center;
+    list-style: none;/*le digo al footer que se centre*/
+}
+.estado_soltero{
+
+  float: left;
+}
+
+.estado_civil{
+
+  float: right;
+}
+
+@media(min-width:426px){
+  .container{
+    width: 60%;
+  }
+  .formulario{
+    min-height: 400px;
+  }
+  .texto,.inicio_sesion{
+    margin-top: 30px;
+  }
+
+   .botones{
+     display: inline-block;
+     width: 100%;
+   }
+
+  .boton_borrar{
+    width: 40%;
+    margin-top: 30px;
+    float: right;
+  }
+
+  .boton_registro{
+    width: 40%;
+    margin-top: 30px;
+    float: left;
+  }
+
+
+}
+
+@media(min-width:769px){
+  .container{
+    width: 50%;
+	overflow: hidden;
+  }
+
+  .texto{
+    margin-top: 40px;
+  }
+
+  .formulario{
+    min-height: 543px;
+  }
+  .boton_inicio{
+    width: 30%;
+    float: right;
+  }
+  .texto_sesion{
+    width: 34%;
+    display: inline-block;
+    padding: 10px;
+  }
+  .boton_borrar{
+
+    margin-top: 40px;
+  }
+
+  .recordar{
+    display: inline-block;
+    float: right;
+    margin-top:  -13px;
+    padding-right: 5%;
+  }
+  .boton_registro{
+    margin-top: 40px;
+  }
+  .cambio_contrasenia{
+    padding-left: 33%;
+  }
+  footer ul li{
+    margin-top: 10px;
+    display: inline-block;
+  }
+}
